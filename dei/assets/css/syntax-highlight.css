@@ -1,0 +1,13 @@
+.code-block{border-color:#30384d;background:#111827;color:#e6edf7;box-shadow:0 8px 24px #18203318}
+.code-title{background:#1d2940;color:#f5f7fb;border-bottom:1px solid #33415c;letter-spacing:.02em}
+.code-block pre{padding:1.15rem;font:500 .84rem/1.68 "Cascadia Code","SFMono-Regular",Consolas,"Liberation Mono",monospace;tab-size:4}
+.code-block code{color:#dce6f2}
+.tok-comment{color:#7fdb9b;font-style:italic}
+.tok-keyword{color:#f39ac7;font-weight:700}
+.tok-type{color:#72d7ef}
+.tok-string{color:#ffc878}
+.tok-number{color:#b8e986}
+.tok-function{color:#91b9ff}
+.tok-punctuation{color:#aab9d0}
+.code-block ::selection{background:#385786;color:#fff}
+@media print{.code-block{background:#f6f8fa;color:#1f2937;border-color:#bac3cf}.code-title{background:#e8edf3;color:#111827}.code-block code{color:#1f2937}.tok-comment{color:#16713a}.tok-keyword{color:#9d174d}.tok-type{color:#03647a}.tok-string{color:#8a4b00}.tok-number{color:#3f6212}.tok-function{color:#1d4ed8}.tok-punctuation{color:#4b5563}}
