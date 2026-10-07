@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Lesson 2: What Can and Cannot Be Created with AI Image Generation</title>
+<link href="assets/imported.css" rel="stylesheet"/><link href="assets/readaloud.css" rel="stylesheet"/><link href="assets/interactives.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="course-nav" aria-label="Course navigation"><a href="../index.html">All lessons</a><a href="../Lesson1_Package_SCORM/index.html" rel="prev">← Previous lesson</a><label for="courseLesson">Change lesson</label><select id="courseLesson"><option value="../Lesson1_Package_SCORM/index.html">Lesson 1: Introduction, History, and Current Landscape of AI Image Generation</option><option value="../Lesson2_Package_SCORM/index.html" selected>Lesson 2: What Can and Cannot Be Created with AI Image Generation</option><option value="../Lesson3_Package_SCORM/index.html">Lesson 3: Basic Tools and the AI Image Generation Ecosystem</option><option value="../Lesson4_Package_SCORM/index.html">Lesson 4: Prompt Engineering I</option><option value="../Lesson5_Package_SCORM/index.html">Lesson 5: LLMs as Creative and Technical Copilots</option><option value="../Lesson6_Package_SCORM/index.html">Lesson 6: Full Image Generation and Controlled Variations</option><option value="../Lesson7_Package_SCORM/index.html">Lesson 7: Partial Generation: Inpainting and Outpainting</option><option value="../Lesson8_Package_SCORM/index.html">Lesson 8: Image Generation from Sketches and References</option><option value="../Lesson9_Package_SCORM/index.html">Lesson 9: Text in Images and Resolution Enhancement</option><option value="../Lesson10_Package_SCORM/index.html">Lesson 10: Advanced Tools, ComfyUI, and Pipelines</option></select><a href="../Lesson3_Package_SCORM/index.html" rel="next">Next lesson →</a></nav>
+<script>document.getElementById('courseLesson').addEventListener('change', function () { window.location.href = this.value; });</script>
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="topbar"><div><p class="course-label">AI Image Generation</p><h1>Lesson 2: What Can and Cannot Be Created with AI Image Generation</h1></div><div aria-live="polite" class="status-panel"><div>Progress: <span id="progressText">0%</span></div><div aria-hidden="true" class="progress-track"><div class="progress-bar" id="progressBar"></div></div></div></header>
+<div class="app-shell"><nav aria-label="Module menu" class="sidebar"><button aria-expanded="true" class="menu-toggle" onclick="toggleMenu()" type="button">Menu</button><div class="menu-panel" id="menuPanel"><button class="menu-btn" data-screen="welcome" onclick="goToScreen('welcome')" type="button">Welcome</button>
+<button class="menu-btn" data-screen="objectives" onclick="goToScreen('objectives')" type="button"><span class="nav-number">1. </span>Learning Objectives</button>
+<button class="menu-btn" data-screen="mission-map" onclick="goToScreen('mission-map')" type="button"><span class="nav-number">2. </span>Mission Map</button>
+<button class="menu-btn" data-screen="technical-limits" onclick="goToScreen('technical-limits')" type="button"><span class="nav-number">3. </span>Technical Limits</button>
+<button class="menu-btn" data-screen="counting" onclick="goToScreen('counting')" type="button"><span class="nav-number">4. </span>Counting</button>
+<button class="menu-btn" data-screen="hands" onclick="goToScreen('hands')" type="button"><span class="nav-number">5. </span>Hands &amp; Anatomy</button>
+<button class="menu-btn" data-screen="text-limit" onclick="goToScreen('text-limit')" type="button"><span class="nav-number">6. </span>Text Limit</button>
+<button class="menu-btn" data-screen="spatial-logic" onclick="goToScreen('spatial-logic')" type="button"><span class="nav-number">7. </span>Spatial Logic</button>
+<button class="menu-btn" data-screen="activity1" onclick="goToScreen('activity1')" type="button"><span class="nav-number">8. </span>Activity 1: Failure Lab</button>
+<button class="menu-btn" data-screen="diagnosis-match" onclick="goToScreen('diagnosis-match')" type="button"><span class="nav-number">9. </span>Activity 2: Diagnose</button>
+<button class="menu-btn" data-screen="workaround-toolkit" onclick="goToScreen('workaround-toolkit')" type="button"><span class="nav-number">10. </span>Workarounds</button>
+<button class="menu-btn" data-screen="ethics-map" onclick="goToScreen('ethics-map')" type="button"><span class="nav-number">11. </span>Ethics &amp; Legal</button>
+<button class="menu-btn" data-screen="rights-decisions" onclick="goToScreen('rights-decisions')" type="button"><span class="nav-number">12. </span>Safer Prompting</button>
+<button class="menu-btn" data-screen="bias-audit" onclick="goToScreen('bias-audit')" type="button"><span class="nav-number">13. </span>Bias Audit</button>
+<button class="menu-btn" data-screen="deepfakes" onclick="goToScreen('deepfakes')" type="button"><span class="nav-number">14. </span>Deepfakes</button>
+<button class="menu-btn" data-screen="scenario-challenge" onclick="goToScreen('scenario-challenge')" type="button"><span class="nav-number">15. </span>Activity 3: Scenarios</button>
+<button class="menu-btn" data-screen="documentation-log" onclick="goToScreen('documentation-log')" type="button"><span class="nav-number">16. </span>Activity 4: Failure Log</button>
+<button class="menu-btn" data-screen="reflection" onclick="goToScreen('reflection')" type="button"><span class="nav-number">17. </span>Reflection</button>
+<button class="menu-btn" data-screen="assessment" onclick="goToScreen('assessment')" type="button"><span class="nav-number">18. </span>Final Assessment</button>
+<button class="menu-btn" data-screen="summary" onclick="goToScreen('summary')" type="button"><span class="nav-number">19. </span>Summary</button>
+<button class="menu-btn" data-screen="next-steps" onclick="goToScreen('next-steps')" type="button"><span class="nav-number">20. </span>Next Steps</button></div></nav>
+<main id="content" tabindex="-1"><section class="screen" id="welcome"><h2>Welcome to Lesson 2</h2>
+<figure class="visual-frame"><img alt="Welcome visual: Map of the limits and risks explored in Lesson 2" onerror="this.classList.add('missing')" src="assets/img/screen01_welcome_limits_map.png"/><figcaption aria-hidden="true" class="visual-fallback decorative-caption"><strong>Welcome visual: Map of the limits and risks explored in Lesson 2</strong><code>assets/img/screen01_welcome_limits_map.png</code></figcaption></figure>
+<p class="lead">In Lesson 1, you explored how AI image generation translates human intention into machine interpretation. In Lesson 2, you become an <strong>AI image failure detective</strong>: you will intentionally create difficult prompts, inspect what breaks, classify the type of problem, and choose a responsible next step.</p>
+<div class="callout fun"><strong>Lesson challenge:</strong> collect evidence. Do not only say “the AI failed.” Name the type of failure, explain why it matters, and propose a workaround.</div>
+<div class="grid-3">
+<div class="mission-card"><h3>1. Break it</h3><p>Generate prompts that are likely to fail: counting, hands, text, and impossible scenes.</p></div>
+<div class="mission-card"><h3>2. Diagnose it</h3><p>Classify each problem as technical, ethical, legal, interface-related, or workflow-related.</p></div>
+<div class="mission-card"><h3>3. Repair it</h3><p>Choose a better prompt, tool, or workflow instead of randomly regenerating.</p></div>
+</div>
+</section>
+<section class="screen" id="objectives"><h2>Learning Objectives</h2>
+<figure class="content-figure instructional-figure visual-frame" data-figure="instructional"><img alt="Visual: Learning objectives icon set" onerror="this.classList.add('missing')" src="assets/img/screen02_learning_objectives_icons.png"/><figcaption class="figure-caption"><span class="figure-number">Figure 1. </span>Learning objectives icon set.</figcaption></figure>
+<p>By the end of this lesson, you will be able to:</p>
+<ol class="checklist">
+<li>Identify common technical limitations of AI image-generation systems, including counting, hands, text, and spatial logic.</li>
+<li>Explain why AI models may produce convincing-looking but incorrect or distorted visual results.</li>
+<li>Distinguish between prompt ambiguity, technical limitation, interface limitation, workflow mismatch, and ethical or legal risk.</li>
+<li>Recognize basic legal and ethical issues related to copyright, commercial use, styles, artists, brands, bias, representation, deepfakes, and misinformation.</li>
+<li>Analyze AI-generated images critically instead of judging them only by surface attractiveness.</li>
+<li>Propose practical workarounds when a generative system fails or when a request is unsuitable for AI generation.</li>
+<li>Document failures, revisions, and decisions as part of a controlled creative process.</li>
+</ol>
+<div class="callout safe"><strong>Mindset:</strong> a failed output is not the end of the process. It is data for the next creative decision.</div>
+</section>
+<section class="screen" id="mission-map"><h2>Mission Map: From Failure to Workflow</h2>
+<figure class="content-figure instructional-figure visual-frame" data-figure="instructional"><img alt="Visual: Failure diagnosis framework" onerror="this.classList.add('missing')" src="assets/img/screen03_failure_diagnosis_framework.png"/><figcaption class="figure-caption"><span class="figure-number">Figure 2. </span>Failure diagnosis framework.</figcaption></figure>
+<p>Lesson 2 is organized as a sequence of mini-missions. Each mission asks you to interact with the content, classify evidence, and make a decision.</p>
+<div class="grid-4">
+<div class="mission-card"><h3>Technical limits</h3><p>Counting, hands, text, and spatial logic.</p><span class="badge">Inspect</span></div>
+<div class="mission-card"><h3>Risk limits</h3><p>Copyright, brands, artists, identity, bias, deepfakes.</p><span class="badge">Decide</span></div>
+<div class="mission-card"><h3>Workflow limits</h3><p>When the tool is being asked to do the wrong job.</p><span class="badge">Reroute</span></div>
+<div class="mission-card"><h3>Documentation</h3><p>Record prompt, tool, failure, and next action.</p><span class="badge">Explain</span></div>
+</div>
+<h3>Quick check</h3>
+<div class="scriptor-quiz" data-payload="eyJ0aXRsZSI6ICJXaGF0IHNob3VsZCB5b3UgZG8gZmlyc3Qgd2hlbiBhbiBvdXRwdXQgZmFpbHM/IiwgIml0ZW1zIjogW3sia2luZCI6ICJjaG9pY2UiLCAiaWQiOiAia2NfZmlyc3RfZmFpbHVyZSIsICJwcm9tcHQiOiAiQSBnZW5lcmF0ZWQgaW1hZ2UgbG9va3Mgd3JvbmcuIFdoYXQgaXMgdGhlIG1vc3QgdXNlZnVsIGZpcnN0IHJlc3BvbnNlPyIsICJvcHRpb25zIjogW3sidmFsdWUiOiAiQSIsICJsYWJlbCI6ICJQcmVzcyBnZW5lcmF0ZSBhZ2FpbiB1bnRpbCBzb21ldGhpbmcgbG9va3MgZ29vZC4ifSwgeyJ2YWx1ZSI6ICJCIiwgImxhYmVsIjogIkNsYXNzaWZ5IHdoYXQga2luZCBvZiBwcm9ibGVtIG9jY3VycmVkIGJlZm9yZSBjaG9vc2luZyB0aGUgbmV4dCBzdGVwLiJ9LCB7InZhbHVlIjogIkMiLCAibGFiZWwiOiAiQXNzdW1lIHRoZSB0b29sIGlzIHVzZWxlc3MuIn1dLCAiYW5zd2VyIjogIkIifV0sICJmZWVkYmFjayI6ICJDb3JyZWN0OiBkaWFnbm9zaXMgY29tZXMgYmVmb3JlIHJhbmRvbSByZWdlbmVyYXRpb24uIn0=" data-type="kc"></div>
+</section>
+<section class="screen" id="technical-limits"><h2>Technical Limits: What Usually Breaks?</h2>
+<figure class="content-figure instructional-figure visual-frame" data-figure="instructional"><img alt="Visual: Four technical limitation zones" onerror="this.classList.add('missing')" src="assets/img/screen04_technical_limits_zone_map.png"/><figcaption class="figure-caption"><span class="figure-number">Figure 3. </span>Four technical limitation zones.</figcaption></figure>
+<p>AI image generators are strong at <strong>plausible visual suggestion</strong>, but weaker at exact symbolic, anatomical, numerical, and spatial control.</p>
+<div class="grid-2">
+<div class="challenge-card"><h3>Counting</h3><p>Exact numbers of people or objects may be wrong.</p></div>
+<div class="challenge-card"><h3>Hands and anatomy</h3><p>Fingers, joints, teeth, and object contact may distort.</p></div>
+<div class="challenge-card"><h3>Text inside images</h3><p>Letters may become pseudo-text or misspelled fragments.</p></div>
+<div class="challenge-card"><h3>Spatial logic</h3><p>Objects may appear in impossible positions or reflections.</p></div>
+</div>
+<h3>Drag the missing words</h3>
+<div class="scriptor-interactive" data-payload="eyJ0ZXh0IjogIkFJIGltYWdlIHN5c3RlbXMgYXJlIHN0cm9uZyBhdCBbW3BsYXVzaWJsZV1dIHZpc3VhbCBzdWdnZXN0aW9uLCBidXQgd2Vha2VyIGF0IFtbZXhhY3RdXSBjb250cm9sLiBBIGdvb2Qgd29ya2Zsb3cgdHJlYXRzIGZhaWx1cmUgYXMgW1tldmlkZW5jZV1dLCBub3QgYXMgYSBwZXJzb25hbCBmYWlsdXJlLiIsICJkaXN0cmFjdG9ycyI6IFsicmFuZG9tIiwgImZpbmFsIiwgImRlY29yYXRpdmUiXX0=" data-type="dragfill"></div>
+</section>
+<section class="screen" id="counting"><h2>Limit 1: Counting and Exact Numbers</h2>
+<figure class="content-figure instructional-figure visual-frame" data-figure="instructional"><img alt="Visual: Counting error in a classroom crowd" onerror="this.classList.add('missing')" src="assets/img/screen05_counting_error_crowd.png"/><figcaption class="figure-caption"><span class="figure-number">Figure 4. </span>Counting error in a classroom crowd.</figcaption></figure>
+<p>Many models can create the <em>feeling</em> of a group, but may not reliably produce exactly twelve students, exactly five chairs, or exactly one red notebook per person.</p>
+<div class="prompt-box">Prompt to test: “Exactly twelve students sitting in a circle, each holding one red notebook, realistic photography.”</div>
+<div class="activity-step"><strong>Predict before generating:</strong> Which part is most likely to fail: number of students, notebooks, circle arrangement, or all three?<textarea data-save="counting_prediction"></textarea></div>
+<div class="activity-step"><strong>Generate once:</strong> Save or screenshot the output. Count the students and notebooks. Record what changed.</div>
+<table class="table-compact"><tr><th>Requested</th><th>Actual result</th><th>Mismatch</th></tr><tr><td>12 students</td><td><input data-save="count_actual_students"/></td><td><input data-save="count_student_mismatch"/></td></tr><tr><td>1 red notebook each</td><td><input data-save="count_actual_notebooks"/></td><td><input data-save="count_notebook_mismatch"/></td></tr><tr><td>Circle arrangement</td><td><input data-save="count_actual_circle"/></td><td><input data-save="count_circle_mismatch"/></td></tr></table>
+<div class="scriptor-quiz" data-payload="eyJ0aXRsZSI6ICJDb3VudGluZyBjaGVjayIsICJpdGVtcyI6IFt7ImtpbmQiOiAiY2hvaWNlIiwgImlkIjogImtjX2NvdW50aW5nIiwgInByb21wdCI6ICJXaGljaCB3b3JrYXJvdW5kIGlzIG1vc3QgYXBwcm9wcmlhdGUgd2hlbiBleGFjdCBvYmplY3QgY291bnQgaXMgZXNzZW50aWFsPyIsICJvcHRpb25zIjogW3sidmFsdWUiOiAiQSIsICJsYWJlbCI6ICJHZW5lcmF0ZSByZXBlYXRlZGx5IGFuZCBob3BlIGZvciB0aGUgYmVzdC4ifSwgeyJ2YWx1ZSI6ICJCIiwgImxhYmVsIjogIlVzZSBhIGxheW91dCwgZ2VuZXJhdGUgaW4gcGFydHMsIG9yIGNvbXBvc2l0ZSBtYW51YWxseS4ifSwgeyJ2YWx1ZSI6ICJDIiwgImxhYmVsIjogIkFkZCBtb3JlIGFkamVjdGl2ZXMgbGlrZSDigJxwZXJmZWN04oCdIGFuZCDigJxhY2N1cmF0ZeKAnS4ifV0sICJhbnN3ZXIiOiAiQiJ9XSwgImZlZWRiYWNrIjogIkNvcnJlY3Q6IGV4YWN0IGNvdW50aW5nIHVzdWFsbHkgbmVlZHMgbGF5b3V0LCBkZWNvbXBvc2l0aW9uLCBvciBtYW51YWwgY29tcG9zaXRpbmcuIn0=" data-type="kc"></div>
+</section>
+<section class="screen" id="hands"><h2>Limit 2: Hands, Anatomy, and Object Contact</h2>
+<figure class="content-figure instructional-figure visual-frame" data-figure="instructional"><img alt="Visual: Hands and object-contact diagnostic image" onerror="this.classList.add('missing')" src="assets/img/screen06_hands_anatomy_error_closeup.png"/><figcaption class="figure-caption"><span class="figure-number">Figure 5. </span>Hands and object-contact diagnostic image.</figcaption></figure>
+<p>Hands are difficult because they have many small parts, appear in many positions, and interact with objects. Small errors are easy to notice.</p>
+<div class="badge-row"><span class="badge">extra fingers</span><span class="badge">fused fingers</span><span class="badge">floating object</span><span class="badge">strange wrist</span><span class="badge">merged pencil</span></div>
+<h3>Hotspot-style observation task</h3>
+<p>When your instructor inserts the image, inspect it and mark the suspicious areas on your worksheet. Use this table to record the evidence.</p>
+<table><tr><th>Area inspected</th><th>Looks correct?</th><th>Evidence</th></tr><tr><td>Finger count</td><td><select data-save="hands_finger_count"><option></option><option>Yes</option><option>No</option><option>Unclear</option></select></td><td><input data-save="hands_finger_evidence"/></td></tr><tr><td>Hand-object contact</td><td><select data-save="hands_contact"><option></option><option>Yes</option><option>No</option><option>Unclear</option></select></td><td><input data-save="hands_contact_evidence"/></td></tr><tr><td>Wrist and pose</td><td><select data-save="hands_pose"><option></option><option>Yes</option><option>No</option><option>Unclear</option></select></td><td><input data-save="hands_pose_evidence"/></td></tr></table>
+<div class="callout safe"><strong>Possible workaround:</strong> avoid close-up hands, frame hands out, generate multiple variations, use inpainting later, or integrate a real photographed hand in a hybrid workflow.</div>
+</section>
+<section class="screen" id="text-limit"><h2>Limit 3: Text Inside Images</h2>
+<figure class="content-figure instructional-figure visual-frame" data-figure="instructional"><img alt="Visual: AI text failure in a poster" onerror="this.classList.add('missing')" src="assets/img/screen07_text_failure_poster.png"/><figcaption class="figure-caption"><span class="figure-number">Figure 6. </span>AI text failure in a poster.</figcaption></figure>
+<p>Text is symbolic language. A poster can look beautiful but fail if the title is unreadable, misspelled, or replaced with letter-like marks.</p>
+<div class="grid-2">
+<div class="challenge-card"><h3>Weak workflow</h3><p>Ask the image generator to create the final poster with exact long text.</p></div>
+<div class="challenge-card"><h3>Better workflow</h3><p>Generate a background with empty space and add typography manually in a design tool.</p></div>
+</div>
+<h3>Choose the safer production decision</h3>
+<div class="scriptor-quiz" data-payload="eyJ0aXRsZSI6ICJUZXh0IHJlbGlhYmlsaXR5IGNoZWNrIiwgIml0ZW1zIjogW3sia2luZCI6ICJjaG9pY2UiLCAiaWQiOiAia2NfdGV4dCIsICJwcm9tcHQiOiAiWW91IG5lZWQgYSBmaW5hbCBwb3N0ZXIgdGl0bGUgdG8gYmUgc3BlbGxlZCBjb3JyZWN0bHkuIFdoYXQgc2hvdWxkIHlvdSBkbz8iLCAib3B0aW9ucyI6IFt7InZhbHVlIjogIkEiLCAibGFiZWwiOiAiR2VuZXJhdGUgdGhlIGV4YWN0IHRpdGxlIGluc2lkZSB0aGUgQUkgaW1hZ2UuIn0sIHsidmFsdWUiOiAiQiIsICJsYWJlbCI6ICJHZW5lcmF0ZSBhIGJhY2tncm91bmQgd2l0aCBubyB0ZXh0IGFuZCBhZGQgdHlwb2dyYXBoeSBtYW51YWxseS4ifSwgeyJ2YWx1ZSI6ICJDIiwgImxhYmVsIjogIkFjY2VwdCBwc2V1ZG8tdGV4dCBpZiB0aGUgcG9zdGVyIGxvb2tzIGF0dHJhY3RpdmUuIn1dLCAiYW5zd2VyIjogIkIifV0sICJmZWVkYmFjayI6ICJDb3JyZWN0OiB1c2UgQUkgZm9yIHZpc3VhbCBhdG1vc3BoZXJlIGFuZCBtYW51YWwgdG9vbHMgZm9yIGV4YWN0IHR5cG9ncmFwaHkuIn0=" data-type="kc"></div>
+<div class="activity-step"><strong>Rewrite the risky prompt:</strong><textarea data-save="text_rewrite" placeholder="Turn a poster-with-long-text prompt into a safer background prompt with no text."></textarea></div>
+</section>
+<section class="screen" id="spatial-logic"><h2>Limit 4: Spatial Logic and Impossible Scenes</h2>
+<figure class="content-figure instructional-figure visual-frame" data-figure="instructional"><img alt="Visual: Impossible spatial logic scene" onerror="this.classList.add('missing')" src="assets/img/screen08_spatial_logic_impossible_scene.png"/><figcaption class="figure-caption"><span class="figure-number">Figure 7. </span>Impossible spatial logic scene.</figcaption></figure>
+<p>AI systems can struggle with relationships such as <strong>under</strong>, <strong>behind</strong>, <strong>inside</strong>, <strong>next to</strong>, and <strong>reflected in</strong>.</p>
+<div class="prompt-box">Prompt to test: “A blue cube under a glass table, behind a red chair, reflected in a mirror on the left wall.”</div>
+<h3>Spatial detective checklist</h3>
+<table><tr><th>Relationship</th><th>Correct?</th><th>What happened?</th></tr><tr><td>Blue cube under glass table</td><td><select data-save="space_under"><option></option><option>Correct</option><option>Incorrect</option><option>Unclear</option></select></td><td><input data-save="space_under_note"/></td></tr><tr><td>Behind red chair</td><td><select data-save="space_behind"><option></option><option>Correct</option><option>Incorrect</option><option>Unclear</option></select></td><td><input data-save="space_behind_note"/></td></tr><tr><td>Mirror reflection on left wall</td><td><select data-save="space_reflection"><option></option><option>Correct</option><option>Incorrect</option><option>Unclear</option></select></td><td><input data-save="space_reflection_note"/></td></tr></table>
+<div class="callout fun"><strong>Challenge:</strong> simplify the scene so the model has fewer spatial relationships to resolve.</div>
+</section>
+<section class="screen" id="activity1"><h2>Activity 1 — Failure Lab</h2>
+<figure class="visual-frame"><img alt="Visual: Failure Lab prompt cards" onerror="this.classList.add('missing')" src="assets/img/screen09_failure_lab_prompt_cards.png"/><figcaption aria-hidden="true" class="visual-fallback decorative-caption"><strong>Visual: Failure Lab prompt cards</strong><code>assets/img/screen09_failure_lab_prompt_cards.png</code></figcaption></figure>
+<p>In this guided lab, you intentionally test four difficult prompts. Your goal is to collect evidence, not to create a perfect image.</p>
+<div class="grid-2">
+<div class="challenge-card"><h3>Prompt A: Counting</h3><p>Exactly twelve students sitting in a circle, each holding one red notebook, realistic photography.</p></div>
+<div class="challenge-card"><h3>Prompt B: Hands</h3><p>Close-up photograph of a designer holding a pencil and sketchbook, realistic hands, natural pose.</p></div>
+<div class="challenge-card"><h3>Prompt C: Text</h3><p>A poster that says “AI FILM FESTIVAL 2026” in large clean typography.</p></div>
+<div class="challenge-card"><h3>Prompt D: Space</h3><p>A blue cube under a glass table, behind a red chair, reflected in a mirror on the left wall.</p></div>
+</div>
+<h3>Failure log</h3>
+<table><tr><th>Prompt</th><th>What failed?</th><th>Failure type</th><th>Possible workaround</th></tr>
+<tr><td>A</td><td><input data-save="lab_a_failed"/></td><td><select data-save="lab_a_type"><option></option><option>Counting</option><option>Hands</option><option>Text</option><option>Spatial logic</option></select></td><td><input data-save="lab_a_workaround"/></td></tr>
+<tr><td>B</td><td><input data-save="lab_b_failed"/></td><td><select data-save="lab_b_type"><option></option><option>Counting</option><option>Hands</option><option>Text</option><option>Spatial logic</option></select></td><td><input data-save="lab_b_workaround"/></td></tr>
+<tr><td>C</td><td><input data-save="lab_c_failed"/></td><td><select data-save="lab_c_type"><option></option><option>Counting</option><option>Hands</option><option>Text</option><option>Spatial logic</option></select></td><td><input data-save="lab_c_workaround"/></td></tr>
+<tr><td>D</td><td><input data-save="lab_d_failed"/></td><td><select data-save="lab_d_type"><option></option><option>Counting</option><option>Hands</option><option>Text</option><option>Spatial logic</option></select></td><td><input data-save="lab_d_workaround"/></td></tr></table>
+<span class="completion"><button onclick="markActivityComplete('failure_lab')" type="button">Mark Activity 1 complete</button></span>
+</section>
+<section class="screen" id="diagnosis-match"><h2>Activity 2 — Diagnose the Failure</h2>
+<figure class="visual-frame"><img alt="Visual: Diagnosis cards" onerror="this.classList.add('missing')" src="assets/img/screen10_drag_drop_diagnosis_cards.png"/><figcaption aria-hidden="true" class="visual-fallback decorative-caption"><strong>Visual: Diagnosis cards</strong><code>assets/img/screen10_drag_drop_diagnosis_cards.png</code></figcaption></figure>
+<p>Match each situation to the most likely diagnosis. The same bad result can have different causes.</p>
+<div class="scriptor-interactive" data-payload="eyJ0ZXh0IjogIuKAnEEgYmVhdXRpZnVsIHNjZW5l4oCdIGlzIG1haW5seSBbW1Byb21wdCBhbWJpZ3VpdHldXS4g4oCcRXhhY3RseSAxNyBpZGVudGljYWwgcGVvcGxl4oCdIGlzIG1haW5seSBhIFtbVGVjaG5pY2FsIGxpbWl0YXRpb25dXS4g4oCcQSBDRU/igJ0gcmVwZWF0ZWRseSBzaG93biBhcyBvbmUgc29jaWFsIHR5cGUgc3VnZ2VzdHMgW1tEYXRhc2V0IGJpYXNdXS4g4oCcTm8gc2VlZCBhdmFpbGFibGXigJ0gaXMgYW4gW1tJbnRlcmZhY2UgbGltaXRhdGlvbl1dLiDigJxBIGJyYW5kLWxpa2UgbG9nb+KAnSBtYXkgYmUgYSBbW0xlZ2FsIG9yIGV0aGljYWwgcmlza11dLiDigJxGaW5hbCB0eXBvZ3JhcGh5IGluc2lkZSBhbiBpbWFnZSBnZW5lcmF0b3LigJ0gaXMgYSBbW1dvcmtmbG93IG1pc21hdGNoXV0uIiwgImRpc3RyYWN0b3JzIjogWyJHb29kIHN0eWxlIiwgIlN0cm9uZyBhdXRob3JzaGlwIiwgIlJhbmRvbSBzdWNjZXNzIl19" data-type="dragfill"></div>
+<div class="activity-step"><strong>Apply the framework:</strong> choose one image from Activity 1 and explain which diagnosis fits best.<textarea data-save="diagnosis_apply"></textarea></div>
+<span class="completion"><button onclick="markActivityComplete('diagnosis_match')" type="button">Mark Activity 2 complete</button></span>
+</section>
+<section class="screen" id="workaround-toolkit"><h2>Workaround Toolkit</h2>
+<figure class="content-figure instructional-figure visual-frame" data-figure="instructional"><img alt="Visual: Workaround toolkit flowchart" onerror="this.classList.add('missing')" src="assets/img/screen11_workaround_toolkit_flowchart.png"/><figcaption class="figure-caption"><span class="figure-number">Figure 8. </span>Workaround toolkit flowchart.</figcaption></figure>
+<p>A workaround is not always a better prompt. Sometimes the best answer is a different workflow.</p>
+<div class="grid-3">
+<div class="mission-card"><h3>Simplify</h3><p>Reduce the number of objects, relationships, or actions.</p></div>
+<div class="mission-card"><h3>Specify</h3><p>Add visible details: lighting, style, composition, format.</p></div>
+<div class="mission-card"><h3>Decompose</h3><p>Generate background, subject, and text separately.</p></div>
+<div class="mission-card"><h3>Use a reference</h3><p>Guide layout, pose, or spatial structure.</p></div>
+<div class="mission-card"><h3>Edit manually</h3><p>Use design tools for typography, layout, and precision.</p></div>
+<div class="mission-card"><h3>Refuse or redesign</h3><p>Do not create unsafe, misleading, or rights-risky outputs.</p></div>
+</div>
+<h3>Workaround decision check</h3>
+<div class="scriptor-quiz" data-payload="eyJ0aXRsZSI6ICJDaG9vc2UgdGhlIGJlc3Qgd29ya2Fyb3VuZCIsICJpdGVtcyI6IFt7ImtpbmQiOiAiY2hvaWNlIiwgImlkIjogImtjX3dvcmthcm91bmQiLCAicHJvbXB0IjogIlRoZSBpbWFnZSBoYXMgZ29vZCBhdG1vc3BoZXJlIGJ1dCB1bnJlYWRhYmxlIHRleHQuIFdoYXQgaXMgdGhlIGJlc3QgbmV4dCBhY3Rpb24/IiwgIm9wdGlvbnMiOiBbeyJ2YWx1ZSI6ICJBIiwgImxhYmVsIjogIlJlZ2VuZXJhdGUgdW50aWwgdGhlIHRleHQgaXMgcmVhZGFibGUuIn0sIHsidmFsdWUiOiAiQiIsICJsYWJlbCI6ICJVc2UgdGhlIGltYWdlIGFzIGJhY2tncm91bmQgYW5kIGFkZCB0ZXh0IG1hbnVhbGx5LiJ9LCB7InZhbHVlIjogIkMiLCAibGFiZWwiOiAiSW5jcmVhc2UgaW1hZ2UgcmVzb2x1dGlvbi4ifV0sICJhbnN3ZXIiOiAiQiJ9XSwgImZlZWRiYWNrIjogIkNvcnJlY3Q6IHRoaXMgaXMgYSB3b3JrZmxvdyBtaXNtYXRjaCwgbm90IG9ubHkgYSBwcm9tcHQgcHJvYmxlbS4ifQ==" data-type="kc"></div>
+</section>
+<section class="screen" id="ethics-map"><h2>Ethical and Legal Limits</h2>
+<figure class="content-figure instructional-figure visual-frame" data-figure="instructional"><img alt="Visual: Ethical and legal risk map" onerror="this.classList.add('missing')" src="assets/img/screen12_ethical_legal_risk_map.png"/><figcaption class="figure-caption"><span class="figure-number">Figure 9. </span>Ethical and legal risk map.</figcaption></figure>
+<p>A tool may be able to generate something, but that does not automatically mean it is responsible, safe, legal, or appropriate to use.</p>
+<div class="callout warning"><strong>Caution:</strong> this lesson is educational, not legal advice. For real commercial use, always check tool terms, rights, local rules, and context.</div>
+<div class="grid-2">
+<div class="challenge-card"><h3>Questions before publishing</h3><ul><li>Does it resemble a protected brand or character?</li><li>Does it imitate a living artist?</li><li>Could it be mistaken for documentary evidence?</li><li>Does it use a person’s identity without consent?</li></ul></div>
+<div class="challenge-card"><h3>Safer habits</h3><ul><li>Describe visual qualities.</li><li>Use original references.</li><li>Be transparent about AI use.</li><li>Document prompts, tools, and decisions.</li></ul></div>
+</div>
+</section>
+<section class="screen" id="rights-decisions"><h2>Copyright, Brands, Styles: Safer Prompting</h2>
+<figure class="content-figure instructional-figure visual-frame" data-figure="instructional"><img alt="Visual: Risky vs safer prompt decision tree" onerror="this.classList.add('missing')" src="assets/img/screen13_copyright_brand_style_decision.png"/><figcaption class="figure-caption"><span class="figure-number">Figure 10. </span>Risky vs safer prompt decision tree.</figcaption></figure>
+<p>Instead of naming protected brands or living artists, describe the visual qualities you need.</p>
+<table><tr><th>Riskier prompt</th><th>Safer visual description</th></tr><tr><td>“A product advertisement in the style of a famous living artist and luxury technology brand.”</td><td>“High-contrast product advertisement with bold geometric composition, saturated colors, dramatic shadows, minimal background, reflective surfaces, contemporary editorial photography aesthetics.”</td></tr></table>
+<h3>Rewrite challenge</h3>
+<div class="activity-step"><strong>Rewrite this prompt safely:</strong><div class="prompt-box">A poster in the style of a famous living artist for a well-known sports brand.</div><textarea data-save="safer_prompt_rewrite" placeholder="Describe composition, color, mood, medium, lighting, and texture without naming the artist or brand."></textarea></div>
+<div class="scriptor-quiz" data-payload="eyJ0aXRsZSI6ICJSaWdodHMgZGVjaXNpb24iLCAiaXRlbXMiOiBbeyJraW5kIjogImNob2ljZSIsICJpZCI6ICJrY19yaWdodHMiLCAicHJvbXB0IjogIldoeSBpcyBkZXNjcmliaW5nIHZpc3VhbCBxdWFsaXRpZXMgb2Z0ZW4gc2FmZXIgdGhhbiBuYW1pbmcgYSBicmFuZCBvciBsaXZpbmcgYXJ0aXN0PyIsICJvcHRpb25zIjogW3sidmFsdWUiOiAiQSIsICJsYWJlbCI6ICJJdCByZW1vdmVzIGFsbCBwb3NzaWJsZSBsZWdhbCByaXNrIGF1dG9tYXRpY2FsbHkuIn0sIHsidmFsdWUiOiAiQiIsICJsYWJlbCI6ICJJdCBzdXBwb3J0cyBvcmlnaW5hbCB2aXN1YWwgZGlyZWN0aW9uIGFuZCByZWR1Y2VzIGltaXRhdGlvbiBvZiBwcm90ZWN0ZWQgaWRlbnRpdGllcy4ifSwgeyJ2YWx1ZSI6ICJDIiwgImxhYmVsIjogIkl0IGZvcmNlcyB0aGUgbW9kZWwgdG8gY3JlYXRlIGxvd2VyLXF1YWxpdHkgaW1hZ2VzLiJ9XSwgImFuc3dlciI6ICJCIn1dLCAiZmVlZGJhY2siOiAiQ29ycmVjdDogZGVzY3JpYmluZyBxdWFsaXRpZXMgc3VwcG9ydHMgYXV0aG9yc2hpcCBhbmQgcmVkdWNlcyBkaXJlY3QgaW1pdGF0aW9uLiJ9" data-type="kc"></div>
+</section>
+<section class="screen" id="bias-audit"><h2>Bias and Representation Audit</h2>
+<figure class="content-figure instructional-figure visual-frame" data-figure="instructional"><img alt="Visual: Bias audit gallery" onerror="this.classList.add('missing')" src="assets/img/screen14_bias_audit_gallery.png"/><figcaption class="figure-caption"><span class="figure-number">Figure 11. </span>Bias audit gallery.</figcaption></figure>
+<p>AI-generated images may reproduce dominant or stereotyped patterns from training data and cultural assumptions.</p>
+<div class="prompt-box">Prompt to audit: “A successful CEO presenting a new creative technology.”</div>
+<div class="activity-step"><strong>Generate or inspect 4 outputs.</strong> Look for repeated assumptions about age, gender, race, clothing, setting, body type, status, or culture.</div>
+<table><tr><th>Pattern observed</th><th>Evidence</th><th>How could the prompt or workflow improve?</th></tr><tr><td><input data-save="bias_pattern_1"/></td><td><input data-save="bias_evidence_1"/></td><td><input data-save="bias_improve_1"/></td></tr><tr><td><input data-save="bias_pattern_2"/></td><td><input data-save="bias_evidence_2"/></td><td><input data-save="bias_improve_2"/></td></tr><tr><td><input data-save="bias_pattern_3"/></td><td><input data-save="bias_evidence_3"/></td><td><input data-save="bias_improve_3"/></td></tr></table>
+<div class="callout safe"><strong>Reflection:</strong> responsible prompting is not only about avoiding errors. It is also about noticing who is represented, excluded, repeated, or stereotyped.</div>
+</section>
+<section class="screen" id="deepfakes"><h2>Deepfakes, Realism, and Verification</h2>
+<figure class="content-figure instructional-figure visual-frame" data-figure="instructional"><img alt="Visual: Deepfake verification checklist" onerror="this.classList.add('missing')" src="assets/img/screen15_deepfake_verification_checklist.png"/><figcaption class="figure-caption"><span class="figure-number">Figure 12. </span>Deepfake verification checklist.</figcaption></figure>
+<p>Photographic realism is no longer reliable evidence that an event happened. A realistic image can be generated, manipulated, miscaptioned, or taken out of context.</p>
+<h3>Verification toolkit</h3>
+<table><tr><th>Step</th><th>Question</th></tr><tr><td>Source check</td><td>Where did the image first appear?</td></tr><tr><td>Reverse image search</td><td>Does it appear in older or reliable sources?</td></tr><tr><td>Context check</td><td>Do credible sources report the event?</td></tr><tr><td>Technical check</td><td>Are anatomy, text, lighting, or physics inconsistent?</td></tr><tr><td>Plausibility check</td><td>Does the image confirm what people already want to believe?</td></tr></table>
+<h3>Quick scenario</h3>
+<div class="scriptor-quiz" data-payload="eyJ0aXRsZSI6ICJCZWZvcmUgc2hhcmluZyIsICJpdGVtcyI6IFt7ImtpbmQiOiAiY2hvaWNlIiwgImlkIjogImtjX2RlZXBmYWtlIiwgInByb21wdCI6ICJZb3Ugc2VlIGEgcGhvdG9yZWFsaXN0aWMgaW1hZ2Ugb2YgYSBwdWJsaWMgZmlndXJlIGRvaW5nIHNvbWV0aGluZyBzaG9ja2luZy4gV2hhdCBpcyB0aGUgbW9zdCByZXNwb25zaWJsZSBmaXJzdCBzdGVwPyIsICJvcHRpb25zIjogW3sidmFsdWUiOiAiQSIsICJsYWJlbCI6ICJTaGFyZSBpdCBxdWlja2x5IGJlY2F1c2UgaXQgbG9va3MgcmVhbC4ifSwgeyJ2YWx1ZSI6ICJCIiwgImxhYmVsIjogIkNoZWNrIHNvdXJjZSwgY29udGV4dCwgYW5kIHJlbGlhYmxlIHJlcG9ydGluZyBiZWZvcmUgdHJ1c3RpbmcgaXQuIn0sIHsidmFsdWUiOiAiQyIsICJsYWJlbCI6ICJBc3N1bWUgaXQgaXMgZmFrZSBiZWNhdXNlIGFsbCBzdXJwcmlzaW5nIGltYWdlcyBhcmUgZmFrZS4ifV0sICJhbnN3ZXIiOiAiQiJ9XSwgImZlZWRiYWNrIjogIkNvcnJlY3Q6IHZlcmlmaWNhdGlvbiByZXF1aXJlcyBzb3VyY2UgYW5kIGNvbnRleHQsIG5vdCBvbmx5IHZpc3VhbCBpbnNwZWN0aW9uLiJ9" data-type="kc"></div>
+</section>
+<section class="screen" id="scenario-challenge"><h2>Activity 3 — Responsible Use Scenario Challenge</h2>
+<figure class="visual-frame"><img alt="Visual: Scenario challenge board" onerror="this.classList.add('missing')" src="assets/img/screen16_scenario_challenge_client_brief.png"/><figcaption aria-hidden="true" class="visual-fallback decorative-caption"><strong>Visual: Scenario challenge board</strong><code>assets/img/screen16_scenario_challenge_client_brief.png</code></figcaption></figure>
+<p>Work in pairs. Read each scenario, choose the risk level, and propose a responsible next step.</p>
+<div class="grid-2">
+<div class="challenge-card"><h3>Scenario A: Commercial poster</h3><p>A client asks for a poster “like a famous film franchise” with the exact title inside the image.</p></div>
+<div class="challenge-card"><h3>Scenario B: Student portrait</h3><p>A student wants to generate images using a classmate’s face without asking them.</p></div>
+<div class="challenge-card"><h3>Scenario C: News-style image</h3><p>A viral image appears to show an explosion near a public building.</p></div>
+<div class="challenge-card"><h3>Scenario D: Classroom experiment</h3><p>You generate a failed hand image only for analysis and document the problem.</p></div>
+</div>
+<table><tr><th>Scenario</th><th>Risk level</th><th>Reason</th><th>Responsible next step</th></tr>
+<tr><td>A</td><td><select data-save="scen_a_risk"><option></option><option>Low</option><option>Medium</option><option>High</option></select></td><td><input data-save="scen_a_reason"/></td><td><input data-save="scen_a_step"/></td></tr>
+<tr><td>B</td><td><select data-save="scen_b_risk"><option></option><option>Low</option><option>Medium</option><option>High</option></select></td><td><input data-save="scen_b_reason"/></td><td><input data-save="scen_b_step"/></td></tr>
+<tr><td>C</td><td><select data-save="scen_c_risk"><option></option><option>Low</option><option>Medium</option><option>High</option></select></td><td><input data-save="scen_c_reason"/></td><td><input data-save="scen_c_step"/></td></tr>
+<tr><td>D</td><td><select data-save="scen_d_risk"><option></option><option>Low</option><option>Medium</option><option>High</option></select></td><td><input data-save="scen_d_reason"/></td><td><input data-save="scen_d_step"/></td></tr></table>
+<span class="completion"><button onclick="markActivityComplete('scenario_challenge')" type="button">Mark Activity 3 complete</button></span>
+</section>
+<section class="screen" id="documentation-log"><h2>Activity 4 — Minimum Failure Log</h2>
+<figure class="visual-frame"><img alt="Visual: Minimum failure log template" onerror="this.classList.add('missing')" src="assets/img/screen17_documentation_log_template.png"/><figcaption aria-hidden="true" class="visual-fallback decorative-caption"><strong>Visual: Minimum failure log template</strong><code>assets/img/screen17_documentation_log_template.png</code></figcaption></figure>
+<p>Documentation makes failure useful. Record the exact prompt, tool, visible settings, and diagnosis so your next attempt is informed rather than random.</p>
+<table><tr><th>Field</th><th>Your notes</th></tr><tr><td>Exact prompt used</td><td><textarea data-save="log_prompt"></textarea></td></tr><tr><td>Tool and model, if visible</td><td><input data-save="log_tool"/></td></tr><tr><td>Attempts or variations generated</td><td><input data-save="log_attempts"/></td></tr><tr><td>What worked</td><td><textarea data-save="log_worked"></textarea></td></tr><tr><td>What failed</td><td><textarea data-save="log_failed"></textarea></td></tr><tr><td>Failure diagnosis</td><td><select data-save="log_diagnosis"><option></option><option>Prompt ambiguity</option><option>Technical limitation</option><option>Dataset bias</option><option>Interface limitation</option><option>Legal or ethical risk</option><option>Workflow mismatch</option></select></td></tr><tr><td>Next improvement</td><td><textarea data-save="log_next"></textarea></td></tr></table>
+<span class="completion"><button onclick="markActivityComplete('failure_log')" type="button">Mark Activity 4 complete</button></span>
+</section>
+<section class="screen" id="reflection"><h2>Reflection Wall</h2>
+<figure class="visual-frame"><img alt="Visual: Reflection wall" onerror="this.classList.add('missing')" src="assets/img/screen18_reflection_wall.png"/><figcaption aria-hidden="true" class="visual-fallback decorative-caption"><strong>Visual: Reflection wall</strong><code>assets/img/screen18_reflection_wall.png</code></figcaption></figure>
+<p>Answer the reflection questions individually, then discuss one answer with a partner.</p>
+<div class="reflection"><label><strong>1. Which failure surprised you most, and why?</strong><textarea data-save="reflection_surprise"></textarea></label></div>
+<div class="reflection"><label><strong>2. When should an AI-generated image be treated as a draft rather than a final asset?</strong><textarea data-save="reflection_draft"></textarea></label></div>
+<div class="reflection"><label><strong>3. What is one responsible-use decision you would now make before publishing an AI-generated image?</strong><textarea data-save="reflection_responsible"></textarea></label></div>
+<div class="callout fun"><strong>Partner share:</strong> exchange one practical workaround and one ethical caution.</div>
+</section>
+<section class="screen" id="assessment"><h2>Final Assessment</h2>
+<figure class="visual-frame"><img alt="Visual: Assessment collage" onerror="this.classList.add('missing')" src="assets/img/screen19_final_assessment_collage.png"/><figcaption aria-hidden="true" class="visual-fallback decorative-caption"><strong>Visual: Assessment collage</strong><code>assets/img/screen19_final_assessment_collage.png</code></figcaption></figure>
+<p>Complete the quiz and short response. You need at least 70% on the auto-scored questions to pass the SCORM assessment.</p>
+<div class="scriptor-quiz" data-payload="eyJpdGVtcyI6IFt7ImtpbmQiOiAiY2hvaWNlIiwgImlkIjogInExIiwgInByb21wdCI6ICJXaGljaCBpc3N1ZSBpcyBtb3N0IGFzc29jaWF0ZWQgd2l0aCBleGFjdCBudW1iZXJzIG9mIHJlcGVhdGVkIG9iamVjdHM/IiwgIm9wdGlvbnMiOiBbeyJ2YWx1ZSI6ICJBIiwgImxhYmVsIjogIkNvdW50aW5nIGVycm9yIn0sIHsidmFsdWUiOiAiQiIsICJsYWJlbCI6ICJDb21tZXJjaWFsIHVzZSJ9LCB7InZhbHVlIjogIkMiLCAibGFiZWwiOiAiU3R5bGUgaW1pdGF0aW9uIn0sIHsidmFsdWUiOiAiRCIsICJsYWJlbCI6ICJVcHNjYWxpbmcifV0sICJhbnN3ZXIiOiAiQSJ9LCB7ImtpbmQiOiAiY2hvaWNlIiwgImlkIjogInEyIiwgInByb21wdCI6ICJBIHBvc3RlciBpbWFnZSBjb250YWlucyBhdHRyYWN0aXZlIGJ1dCB1bnJlYWRhYmxlIGxldHRlci1saWtlIHNoYXBlcy4gV2hhdCBpcyB0aGUgbW9zdCBhY2N1cmF0ZSBkaWFnbm9zaXM/IiwgIm9wdGlvbnMiOiBbeyJ2YWx1ZSI6ICJBIiwgImxhYmVsIjogIlRoZSBpbWFnZSBpcyBhdXRvbWF0aWNhbGx5IHNhZmUgdG8gcHVibGlzaC4ifSwgeyJ2YWx1ZSI6ICJCIiwgImxhYmVsIjogIlRleHQvcHNldWRvLXRleHQgbGltaXRhdGlvbiBhbmQgbGlrZWx5IHdvcmtmbG93IG1pc21hdGNoLiJ9LCB7InZhbHVlIjogIkMiLCAibGFiZWwiOiAiVGhlIGltYWdlIG5lZWRzIG1vcmUgcmFuZG9tIHJlZ2VuZXJhdGlvbiBvbmx5LiJ9LCB7InZhbHVlIjogIkQiLCAibGFiZWwiOiAiVGhlIG1vZGVsIGNvdW50ZWQgaW5jb3JyZWN0bHkuIn1dLCAiYW5zd2VyIjogIkIifSwgeyJraW5kIjogImNob2ljZSIsICJpZCI6ICJxMyIsICJwcm9tcHQiOiAiV2h5IGlzIOKAnGluIHRoZSBzdHlsZSBvZiBhIGZhbW91cyBsaXZpbmcgYXJ0aXN04oCdIHJpc2t5IGZvciBhIGNsYXNzcm9vbS10by1jb21tZXJjaWFsIHdvcmtmbG93PyIsICJvcHRpb25zIjogW3sidmFsdWUiOiAiQSIsICJsYWJlbCI6ICJJdCBtYXkgaW1pdGF0ZSBhIHByb3RlY3RlZCBvciBkaXN0aW5jdGl2ZSBjcmVhdGl2ZSBpZGVudGl0eS4ifSwgeyJ2YWx1ZSI6ICJCIiwgImxhYmVsIjogIkl0IGFsd2F5cyBwcm9kdWNlcyBsb3cgcmVzb2x1dGlvbi4ifSwgeyJ2YWx1ZSI6ICJDIiwgImxhYmVsIjogIkl0IHByZXZlbnRzIGFsbCBiaWFzLiJ9LCB7InZhbHVlIjogIkQiLCAibGFiZWwiOiAiSXQgaXMgdGhlIG9ubHkgd2F5IHRvIGRlc2NyaWJlIHZpc3VhbCBzdHlsZS4ifV0sICJhbnN3ZXIiOiAiQSJ9LCB7ImtpbmQiOiAiY2hvaWNlIiwgImlkIjogInE0IiwgInByb21wdCI6ICJBIGdlbmVyYXRlZCBpbWFnZSBzdHJvbmdseSByZWluZm9yY2VzIGEgc3RlcmVvdHlwZS4gV2hpY2ggY2F0ZWdvcnkgYmVzdCBmaXRzIHRoZSBwcm9ibGVtPyIsICJvcHRpb25zIjogW3sidmFsdWUiOiAiQSIsICJsYWJlbCI6ICJEYXRhc2V0IGJpYXMgb3IgcmVwcmVzZW50YXRpb25hbCByaXNrIn0sIHsidmFsdWUiOiAiQiIsICJsYWJlbCI6ICJTZWVkIGNvbnRyb2wifSwgeyJ2YWx1ZSI6ICJDIiwgImxhYmVsIjogIkFzcGVjdCByYXRpbyBwcm9ibGVtIn0sIHsidmFsdWUiOiAiRCIsICJsYWJlbCI6ICJTYW1wbGVyIHNlbGVjdGlvbiJ9XSwgImFuc3dlciI6ICJBIn0sIHsia2luZCI6ICJjaG9pY2UiLCAiaWQiOiAicTUiLCAicHJvbXB0IjogIldoaWNoIGlzIHRoZSBtb3N0IHJlc3BvbnNpYmxlIGZpcnN0IHN0ZXAgYmVmb3JlIHNoYXJpbmcgYSBzaG9ja2luZyBwaG90b3JlYWxpc3RpYyBuZXdzLXN0eWxlIGltYWdlPyIsICJvcHRpb25zIjogW3sidmFsdWUiOiAiQSIsICJsYWJlbCI6ICJTaGFyZSBpdCBiZWNhdXNlIHJlYWxpc20gcHJvdmVzIGF1dGhlbnRpY2l0eS4ifSwgeyJ2YWx1ZSI6ICJCIiwgImxhYmVsIjogIkNoZWNrIHNvdXJjZSwgY29udGV4dCwgYW5kIHJlbGlhYmxlIHJlcG9ydGluZy4ifSwgeyJ2YWx1ZSI6ICJDIiwgImxhYmVsIjogIkFzc3VtZSBhbGwgaW1hZ2VzIG9ubGluZSBhcmUgQUkuIn0sIHsidmFsdWUiOiAiRCIsICJsYWJlbCI6ICJVcHNjYWxlIGl0IHRvIGluc3BlY3QgZGV0YWlscy4ifV0sICJhbnN3ZXIiOiAiQiJ9LCB7ImtpbmQiOiAic2hvcnQiLCAiaWQiOiAic2hvcnRfd29ya2Fyb3VuZCIsICJwcm9tcHQiOiAiQ2hvb3NlIG9uZSBmYWlsdXJlIGZyb20gdGhlIGxlc3NvbiBhbmQgd3JpdGUgYSBiZXR0ZXIgbmV4dCBzdGVwLiIsICJndWlkZSI6ICJOYW1lIHRoZSBmYWlsdXJlIHR5cGUsIGV4cGxhaW4gd2h5IGl0IG1hdHRlcnMsIGFuZCBwcm9wb3NlIGEgcHJvbXB0IG9yIHdvcmtmbG93IHdvcmthcm91bmQuIn1dfQ==" data-type="assessment"></div>
+</section>
+<section class="screen" id="summary"><h2>Module Summary</h2>
+<figure class="visual-frame"><img alt="Visual: Lesson 2 achievement badge" onerror="this.classList.add('missing')" src="assets/img/screen20_summary_badge.png"/><figcaption aria-hidden="true" class="visual-fallback decorative-caption"><strong>Visual: Lesson 2 achievement badge</strong><code>assets/img/screen20_summary_badge.png</code></figcaption></figure>
+<h3>What you should take away</h3>
+<ul>
+<li>AI image generation is powerful, but it has technical limits: counting, hands, text, and spatial logic.</li>
+<li>Not every failure is the same. Diagnose before revising.</li>
+<li>Some requests raise legal, ethical, identity, bias, or misinformation risks.</li>
+<li>A better workflow is often more useful than a longer prompt.</li>
+<li>Documentation transforms failure into creative control.</li>
+</ul>
+<div class="callout safe"><strong>Core principle:</strong> the fact that a tool can generate something does not automatically mean that the image is reliable, usable, safe, or responsible to publish.</div>
+</section>
+<section class="screen" id="next-steps"><h2>Next Steps</h2>
+<figure class="visual-frame"><img alt="Visual: Bridge from Lesson 2 to Lesson 3" onerror="this.classList.add('missing')" src="assets/img/screen21_next_steps_bridge.png"/><figcaption aria-hidden="true" class="visual-fallback decorative-caption"><strong>Visual: Bridge from Lesson 2 to Lesson 3</strong><code>assets/img/screen21_next_steps_bridge.png</code></figcaption></figure>
+<p>In Lesson 3, you will explore the AI image-generation tool ecosystem. Lesson 2 showed that tools have limits; Lesson 3 asks which tool is suitable for a specific creative objective.</p>
+<div class="grid-3">
+<div class="mission-card"><h3>Before choosing a tool</h3><p>Ask: what do I need the tool to do?</p></div>
+<div class="mission-card"><h3>Before trusting an output</h3><p>Ask: what kind of evidence supports this image?</p></div>
+<div class="mission-card"><h3>Before publishing</h3><p>Ask: is it responsible, accurate, and rights-aware?</p></div>
+</div>
+<div class="callout fun"><strong>Ready for Lesson 3:</strong> bring your failure log. It will help you decide which tools and controls you need next.</div>
+</section><div class="nav-controls"><button id="backBtn" onclick="previousScreen()" type="button">Back</button><button id="nextBtn" onclick="nextScreen()" type="button">Next</button></div></main></div>
+<footer class="footer"><p>AI Image Generation · Lesson 2 · SCORM 1.2 Package</p></footer>
+<script src="assets/imported.js"></script><script src="assets/readaloud.js"></script><script src="assets/interactives.js"></script>
+<script>
+(function(){
+  function numberInstructionalFigures(){
+    var figures = document.querySelectorAll('figure[data-figure="instructional"] figcaption.figure-caption');
+    figures.forEach(function(caption, index){
+      var number = caption.querySelector('.figure-number');
+      if(!number){
+        number = document.createElement('span');
+        number.className = 'figure-number';
+        caption.insertBefore(number, caption.firstChild);
+      }
+      number.textContent = 'Figure ' + (index + 1) + '. ';
+    });
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', numberInstructionalFigures);
+  } else {
+    numberInstructionalFigures();
+  }
+})();
+</script>
+</body></html>

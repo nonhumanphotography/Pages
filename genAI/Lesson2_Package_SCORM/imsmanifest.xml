@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="LESSON2_AI_IMAGE_GENERATION_SCORM" version="1.2"
+  xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                      http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata><schema>ADL SCORM</schema><schemaversion>1.2</schemaversion></metadata>
+  <organizations default="ORG-1"><organization identifier="ORG-1"><title>Lesson 2: What Can and Cannot Be Created with AI Image Generation</title>
+      <item identifier="ITEM-1" identifierref="RES-1" isvisible="true"><title>Welcome</title></item>
+      <item identifier="ITEM-2" identifierref="RES-1" isvisible="true"><title>Learning Objectives</title></item>
+      <item identifier="ITEM-3" identifierref="RES-1" isvisible="true"><title>Mission Map</title></item>
+      <item identifier="ITEM-4" identifierref="RES-1" isvisible="true"><title>Technical Limits</title></item>
+      <item identifier="ITEM-5" identifierref="RES-1" isvisible="true"><title>Counting</title></item>
+      <item identifier="ITEM-6" identifierref="RES-1" isvisible="true"><title>Hands &amp; Anatomy</title></item>
+      <item identifier="ITEM-7" identifierref="RES-1" isvisible="true"><title>Text Limit</title></item>
+      <item identifier="ITEM-8" identifierref="RES-1" isvisible="true"><title>Spatial Logic</title></item>
+      <item identifier="ITEM-9" identifierref="RES-1" isvisible="true"><title>Activity 1: Failure Lab</title></item>
+      <item identifier="ITEM-10" identifierref="RES-1" isvisible="true"><title>Activity 2: Diagnose</title></item>
+      <item identifier="ITEM-11" identifierref="RES-1" isvisible="true"><title>Workarounds</title></item>
+      <item identifier="ITEM-12" identifierref="RES-1" isvisible="true"><title>Ethics &amp; Legal</title></item>
+      <item identifier="ITEM-13" identifierref="RES-1" isvisible="true"><title>Safer Prompting</title></item>
+      <item identifier="ITEM-14" identifierref="RES-1" isvisible="true"><title>Bias Audit</title></item>
+      <item identifier="ITEM-15" identifierref="RES-1" isvisible="true"><title>Deepfakes</title></item>
+      <item identifier="ITEM-16" identifierref="RES-1" isvisible="true"><title>Activity 3: Scenarios</title></item>
+      <item identifier="ITEM-17" identifierref="RES-1" isvisible="true"><title>Activity 4: Failure Log</title></item>
+      <item identifier="ITEM-18" identifierref="RES-1" isvisible="true"><title>Reflection</title></item>
+      <item identifier="ITEM-19" identifierref="RES-1" isvisible="true"><title>Final Assessment</title></item>
+      <item identifier="ITEM-20" identifierref="RES-1" isvisible="true"><title>Summary</title></item>
+      <item identifier="ITEM-21" identifierref="RES-1" isvisible="true"><title>Next Steps</title></item>
+    </organization></organizations>
+  <resources><resource identifier="RES-1" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html"/>
+      <file href="assets/readaloud.js"/>
+      <file href="assets/readaloud.css"/>
+      <file href="assets/interactives.js"/>
+      <file href="assets/interactives.css"/>
+      <file href="assets/imported.css"/>
+      <file href="assets/imported.js"/>
+      <file href="image_generation_list.md"/>
+    </resource></resources>
+</manifest>

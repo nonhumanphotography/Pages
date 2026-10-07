@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="Lesson4_Prompt_Engineering_I" version="1.2" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata><schema>ADL SCORM</schema><schemaversion>1.2</schemaversion></metadata>
+  <organizations default="ORG1"><organization identifier="ORG1"><title>Lesson 4: Prompt Engineering I</title><item identifier="ITEM1" identifierref="RES1"><title>Lesson 4: Prompt Engineering I: Thinking for the Machine</title></item></organization></organizations>
+  <resources><resource identifier="RES1" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html" />
+      <file href="assets/imported.js" />
+      <file href="assets/readaloud.css" />
+      <file href="assets/readaloud.js" />
+      <file href="assets/imported.css" />
+      <file href="assets/interactives.js" />
+      <file href="assets/interactives.css" />
+      <file href="assets/img/screen19_final_boss_brief_to_prompt.png" />
+      <file href="assets/img/screen03_mission_map_prompt_workflow.png" />
+      <file href="assets/img/screen07_language_sorting_sprint.png" />
+      <file href="assets/img/screen18_prompt_autopsy_evidence_board.png" />
+      <file href="assets/img/screen01_welcome_prompt_engineer.png" />
+      <file href="assets/img/screen06_human_machine_language_comparison.png" />
+      <file href="assets/img/screen08_anatomy_strong_prompt.png" />
+      <file href="assets/img/screen04_prompting_translation_diagram.png" />
+      <file href="assets/img/screen05_translation_gapfill_cards.png" />
+      <file href="assets/img/screen02_learning_objectives_prompting.png" />
+      <file href="assets/img/screen21_exit_summary_badge.png" />
+      <file href="assets/img/screen12_weak_prompt_rescue.png" />
+      <file href="assets/img/screen14_positive_negative_control_panel.png" />
+      <file href="assets/img/screen17_one_variable_experiment_matrix.png" />
+      <file href="assets/img/screen10_prompt_formula_flowchart.png" />
+      <file href="assets/img/screen13_hotspot_prompt_autopsy.png" />
+      <file href="assets/img/screen16_prompt_weighting_decision_cards.png" />
+      <file href="assets/img/screen15_implicit_parameters_iceberg.png" />
+      <file href="assets/img/screen11_formula_gapfill.png" />
+      <file href="assets/img/screen09_prompt_component_builder.png" />
+      <file href="assets/img/screen20_final_assessment_prompt_engineering.png" />
+    </resource></resources>
+</manifest>
